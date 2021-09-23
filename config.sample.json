@@ -1,5 +1,5 @@
 {
-    "druidServer" : "http://example.com",
+    "druidServer" : "http://user:pass@127.0.0.1:8081/druid/indexer/v1/task",
     "druidDatasources" : [
     {
         "numberOfPastDays" : 7,
