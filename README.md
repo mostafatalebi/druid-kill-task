@@ -17,8 +17,20 @@ your druid server is password protected.
 
 *Data Sources* You can pass as many datasources as you want, and specify the number of days separately.
 
+Here is a sample entry for a data source:
+```json
+{
+        "numberOfPastDays" : 7,
+        "dataSourceName" : "sample"
+}
+```
+`numberOfPastDays` is the number of past days to keep data. A value of `7` means all segments which are flagged `unused` 
+and belong to a period before the past 7 days, are targeted. In other words, the data of past week is kept and the rest 
+targeted.
+
 ### Usage
 ```python
 python main.py ./config.json
 ```
 
+You can run it via cronjob and having it delete your unused segments on a daily basis.
