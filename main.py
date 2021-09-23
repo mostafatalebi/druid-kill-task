@@ -2,8 +2,6 @@
 # This scripts receives a JSON config file as argument. The JSON is an object
 # with each object containing these keys:
 #    "druidServer" : "", the endpoint to Druid coordinator
-#    "druidUsername" : "", the username for auth
-#    "druidPassword" : "", the password for auth
 #    "druidDatasources": an array of object containing these keys
 # numberOfPastDays int -> the number of days from now to past (for example 60, meaning past 60 days)
 # dataSourceName string -> list of the datasources' names in druid to send requests of mark and kill for
