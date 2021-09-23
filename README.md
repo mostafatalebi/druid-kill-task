@@ -1,4 +1,4 @@
-# Druid Task Killer
+# Druid Kill Task Script
 This (python) script can send Kill-Task requests to a druid overlord server (coordinator).
 Kill-Task is a type of task that removes entries of metadata in a database as well
 as the actual files on deep storage, for the list of segments which are "unused" for the given
