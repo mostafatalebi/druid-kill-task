@@ -1,0 +1,9 @@
+{
+    "druidServer" : "http://example.com",
+    "druidDatasources" : [
+    {
+        "numberOfPastDays" : 7,
+        "dataSourceName" : "sample"
+    }
+]
+}
